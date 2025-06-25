@@ -1,7 +1,5 @@
 # 🍕 PizzaFast
 
-![PizzaFast Logo](public/images/hero-pizza.png)
-
 A modern, responsive pizza ordering web application built with Next.js, TypeScript, and Tailwind CSS. PizzaFast allows users to quickly browse, search, and order delicious pizzas with a clean and interactive UI.
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-orange)](https://pizza-fast-psi.vercel.app/)
@@ -9,7 +7,7 @@ A modern, responsive pizza ordering web application built with Next.js, TypeScri
 [![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-000000?style=flat&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-![Screenshot](https://github.com/irfan-za/pizza-fast/tree/main/public/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/irfan-za/pizza-fast/refs/heads/main/public/images/screenshot.png)
 
 Live demo: [PizzaFast App](https://pizza-fast-psi.vercel.app/)
 
@@ -30,7 +28,7 @@ Live demo: [PizzaFast App](https://pizza-fast-psi.vercel.app/)
 
 ## ⚡ Performance
 
-![Lighthouse Scores](https://github.com/irfan-za/pizza-fast/tree/main/public/images/lighthouse.png)
+![Lighthouse Scores](https://raw.githubusercontent.com/irfan-za/pizza-fast/refs/heads/main/public/images/lighthouse.png)
 
 You can check the Lighthouse scores yourself using this link:
 [View Lighthouse Report](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fpizza-fast-psi.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&locale=en-US&utm_source=lh-chrome-ext)
