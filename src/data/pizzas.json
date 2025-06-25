@@ -1,0 +1,73 @@
+[
+  {
+    "id": "9b9c2adc-f3d0-4b5c-8b1d-39246916b3f5",
+    "name": "Margherita",
+    "description": "Classic pizza with tomato sauce, mozzarella, and fresh basil",
+    "price": 169000,
+    "originalPrice": 199000,
+    "image": "/images/pizzas/margherita.png",
+    "maxQuantity":10  
+  },
+  {
+    "id": "e63e1d44-cfb5-4460-9909-0a6162b4fc73",
+    "name": "Pepperoni",
+    "description": "Traditional pizza topped with spicy pepperoni slices",
+    "price": 189000,
+    "originalPrice": null,
+    "image": "/images/pizzas/pepperoni.png",
+    "maxQuantity":10  
+  },
+  {
+    "id": "c7b6598d-67c3-4b8a-8741-8b822986d3f4",
+    "name": "Vegetarian",
+    "description": "Loaded with bell peppers, mushrooms, onions, olives, and tomatoes",
+    "price": 179000,
+    "originalPrice": 209000,
+    "image": "/images/pizzas/vegetarian.png",
+    "maxQuantity":10
+  },
+  {
+    "id": "d2f6a55c-3a5b-4c2e-b69d-b7eafd9c35d9",
+    "name": "Supreme",
+    "description": "The ultimate combination with pepperoni, sausage, bell peppers, onions, and olives",
+    "price": 229000,
+    "originalPrice": 259000,
+    "image": "/images/pizzas/supreme.png",
+    "maxQuantity":10
+  },
+  {
+    "id": "f8c47512-8b9e-4946-b71e-2c61f7ccf15e",
+    "name": "Hawaiian",
+    "description": "Sweet and savory combination of ham and pineapple",
+    "price": 189000,
+    "originalPrice": null,
+    "image": "/images/pizzas/hawaiian.png",
+    "maxQuantity":10  
+  },
+  {
+    "id": "a1b2c3d4-e5f6-4a5b-9c8d-1e2f3a4b5c6d",
+    "name": "BBQ Chicken",
+    "description": "Tangy BBQ sauce, grilled chicken, red onions, and cilantro",
+    "price": 209000,
+    "originalPrice": 239000,
+    "image": "/images/pizzas/bbq-chicken.png",
+    "maxQuantity":10  
+  },
+  {
+    "id": "b4d8e9f0-1a2b-3c4d-5e6f-7g8h9i0j1k2l",
+    "name": "Buffalo Chicken",
+    "description": "Spicy buffalo sauce, grilled chicken, and blue cheese",
+    "price": 139000,
+    "originalPrice": null,
+    "image": "/images/pizzas/buffalo-chicken.png",
+    "maxQuantity":10  
+  },
+  {
+    "id": "7b3c1d2e-4f5a-6b7c-8d9e-0f1g2h3i4j5k",
+    "name": "Meat Lover's",
+    "description": "Loaded with pepperoni, sausage, bacon, and ham",
+    "price": 159000,
+    "originalPrice": null,
+    "image": "/images/pizzas/meat-lovers.png",
+    "maxQuantity":10  }
+]
