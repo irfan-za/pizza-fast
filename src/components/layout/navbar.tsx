@@ -9,7 +9,7 @@ export const Navbar = () => {
   const ordersCount = orders.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <nav className="bg-card p-4 shadow-lg rounded-b-xl">
+    <nav className="sticky top-0 z-50 bg-card/80 backdrop-blur-sm p-4 shadow-lg rounded-b-xl border-b">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-xl font-bold text-primary">
           <Link
