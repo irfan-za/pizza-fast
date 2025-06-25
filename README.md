@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍕 PizzaFast
 
-## Getting Started
+![PizzaFast Logo](public/images/hero-pizza.png)
 
-First, run the development server:
+A modern, responsive pizza ordering web application built with Next.js, TypeScript, and Tailwind CSS. PizzaFast allows users to quickly browse, search, and order delicious pizzas with a clean and interactive UI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[![Live Demo](https://img.shields.io/badge/Live-Demo-orange)](https://pizza-fast-psi.vercel.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
+[![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-000000?style=flat&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+![Screenshot](https://github.com/irfan-za/pizza-fast/tree/main/public/images/screenshot.png)
+
+Live demo: [PizzaFast App](https://pizza-fast-psi.vercel.app/)
+
+## ✨ Features
+
+- **Responsive Design**: Looks great on all devices from mobile to desktop
+- **Interactive UI**: Smooth animations and micro-interactions for a better user experience
+- **Search Functionality**: Find your favorite pizza with URL query persistence for sharing search results
+- **Order Management**:
+  - Create, read, update, and delete (CRUD) operations for orders
+  - Session persistence using sessionStorage
+  - Limit of 10 pizzas per item for inventory management
+- **Hybrid Rendering**:
+  - Partial pre-rendering with server-side components
+  - Client-side rendering for interactive elements
+- **Loading States**: Skeleton UI with simulated loading for better UX
+- **Accessibility**: Built with accessibility in mind for all users
+
+## ⚡ Performance
+
+![Lighthouse Scores](https://github.com/irfan-za/pizza-fast/tree/main/public/images/lighthouse.png)
+
+You can check the Lighthouse scores yourself using this link:
+[View Lighthouse Report](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fpizza-fast-psi.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&locale=en-US&utm_source=lh-chrome-ext)
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Package Manager**: [pnpm](https://pnpm.io/)
+- **Deployment**: [Vercel](https://vercel.com/)
+
+## 🏃‍♂️ Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- pnpm (recommended) or npm/yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/irfan-za/pizza-fast.git
+   cd pizza-fast
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   pnpm dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
+
+## 📁 Project Structure
+
+```
+pizza-fast/
+├── public/              # Static assets
+│   ├── images/          # Images for the application
+├── src/                 # Source code
+│   ├── app/             # Next.js App Router
+│   │   ├── order/       # Order page
+│   │   ├── globals.css  # Global styles
+│   │   ├── layout.tsx   # Root layout
+│   │   └── page.tsx     # Home page
+│   ├── components/      # React components
+│   │   ├── layout/      # Layout components
+│   │   ├── order/       # Order-related components
+│   │   ├── pizza/       # Pizza-related components
+│   │   └── ui/          # UI components (shadcn)
+│   ├── data/            # Static data
+│   │   └── pizzas.json  # Pizza menu data
+│   ├── lib/             # Utility functions
+│   │   └── utils.ts     # Helper functions
+│   ├── store/           # Zustand stores
+│   │   └── order.ts     # Order state management
+│   └── types/           # TypeScript type definitions
+└── package.json         # Project dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔄 State Management
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application uses Zustand for state management, particularly for handling pizza orders:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Order Store**: Manages the ordered pizza state
+- **Session Persistence**: Order data is stored in sessionStorage to persist across page refreshes
+- **Pizza Store**: Manages the search and filtering state with URL query persistence
 
-## Learn More
+## 📱 Responsive Design
 
-To learn more about Next.js, take a look at the following resources:
+The UI is fully responsive with carefully crafted breakpoints:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Mobile**: Single column layout optimized for small screens
+- **Tablet**: Two-column grid layout for pizza items
+- **Desktop**: Clean four-column grid layout with enhanced visual elements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/irfan-za/pizza-fast/blob/main/LICENSE.md) file for details.
