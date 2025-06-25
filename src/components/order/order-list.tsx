@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { formatPrice } from "@/lib/utils";
+import { formatDate, formatPrice } from "@/lib/utils";
 import { useOrderStore } from "@/store/order";
 import { Minus, Plus, ShoppingCart, Trash2 } from "lucide-react";
 import Link from "next/link";
@@ -24,12 +24,15 @@ export default function OrderList() {
         <div className="space-y-4">
           {orders.map((item) => (
             <Card key={item.id} className="overflow-hidden">
-              <CardContent className="p-6">
+              <CardContent>
                 <div className="flex justify-between items-center">
                   <div className="flex-1">
                     <h3 className="font-semibold">{item.name}</h3>
                     <p className="text-sm text-muted-foreground">
                       {formatPrice(item.price)} per item
+                    </p>
+                    <p className="text-xs mt-2 text-muted-foreground">
+                      {formatDate(item.date)}
                     </p>
                   </div>
 

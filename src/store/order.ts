@@ -44,6 +44,7 @@ export const useOrderStore = create<OrderState>()(
                 quantity,
                 maxQuantity: pizza.maxQuantity,
                 totalPrice: quantity * pizza.price,
+                date: new Date().toISOString(),
               },
             ],
           });

@@ -19,5 +19,13 @@ const formatPrice = (price: number) => {
     minimumFractionDigits: 0,
   }).format(price);
 };
+const formatDate = (date: string | Date) => {
+  const d = new Date(date);
+  return d.toLocaleString("en-US", {
+    dateStyle: "long",
+    timeStyle: "short",
+    hour12: false,
+  });
+};
 
-export { cn, calculateDiscountPercentage, formatPrice };
+export { cn, calculateDiscountPercentage, formatPrice, formatDate };

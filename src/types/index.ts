@@ -17,4 +17,5 @@ export interface OrderItem {
   quantity: number;
   maxQuantity: number;
   totalPrice: number;
+  date: string;
 }

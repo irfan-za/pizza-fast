@@ -53,7 +53,7 @@
   --secondary: oklch(0.85 0.12 30); /* Lighter Orange */
   --secondary-foreground: oklch(0.145 0 0);
   --muted: oklch(0.95 0.05 30); /* Very Light Orange */
-  --muted-foreground: oklch(0.5 0.1 30);
+  --muted-foreground: oklch(56.773% 0.01251 24.158);
   --accent: oklch(86.821% 0.07094 30.34); /* Soft Orange */
   --accent-foreground: oklch(0.145 0 0);
   --destructive: oklch(0.577 0.245 27.325);
